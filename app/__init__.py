@@ -12,5 +12,16 @@ def create_app():
     
     from .routes import bp
     app.register_blueprint(bp)
+    
+    from .main_bp import main_bp
+    app.register_blueprint(main_bp)
+    
+    from .user_bp import user_bp
+    app.register_blueprint(user_bp)
+    
+    from .contato_bp import contato_bp
+    app.register_blueprint(contato_bp)
+    
+    
 
     return app
