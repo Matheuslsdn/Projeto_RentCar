@@ -174,9 +174,9 @@ body, html {
     
 }
 
-#blocos{
+/* #blocos{
 
-}
+} */
 .linha1{
     display: flex;flex-direction: row;gap: 10px;
     margin-bottom: 65px;

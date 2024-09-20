@@ -2,10 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/base.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>{% block titulo %} titulo padrão {% endblock %}</title>
 </head>
 <body>
+    {% include 'menu.html' %}
+    <main>
+        {% block conteudo %}
+
+        {% endblock %}
+        {% block nav %}
+
+        {% endblock %}
+        {% block sidebar %}
+
+        {% endblock %}
+    </main>
     
+    {% include 'footer.html' %}
 </body>
 </html>
